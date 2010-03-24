@@ -81,3 +81,10 @@ else
 	@echo "Error: You must configure with Firefox 2 or 3 support"; exit 1
 endif
 
+work:
+	$(MAKE) $(AM_MAKEFLAGS) -C src
+	$(MAKE) $(AM_MAKEFLAGS) -C plugin
+
+work-install:
+	$(MAKE) $(AM_MAKEFLAGS) -C src install
+	$(MAKE) $(AM_MAKEFLAGS) -C plugin install
