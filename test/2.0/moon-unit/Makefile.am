@@ -179,11 +179,11 @@ copy-xap-to-site: site/ClientBin/moon-unit.xap site/ClientBin/timecode-long.wmv 
 
 site/ClientBin/moon-unit.xap: moon-unit.xap
 	@mkdir -p site/ClientBin
-	@cp moon-unit.xap site/ClientBin
-	@cp $(srcdir)/../../media/video/timecode-long.wmv site/ClientBin
+	@cp moon-unit.xap site/ClientBin/
+	@cp $(srcdir)/../../media/video/timecode-long.wmv site/ClientBin/
 
 site/ClientBin/timecode-long.wmv: $(srcdir)/../../media/video/timecode-long.wmv
-	@cp $(srcdir)/../../media/video/timecode-long.wmv site/ClientBin
+	@cp $(srcdir)/../../media/video/timecode-long.wmv site/ClientBin/
 
 site/ClientBin/images/mono-logo.png: $(srcdir)/mono-logo.png
 	@mkdir -p site/ClientBin/images/
